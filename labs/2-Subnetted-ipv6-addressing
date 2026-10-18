@@ -1,0 +1,49 @@
+© 2013 - 2019 Cisco and/or its affiliates. All rights reserved. Cisco Public Page 1 of 2 www.netacad.com
+#lab2:Packet Tracer - Implement a Subnetted IPv6 Addressing Scheme
+##Addressing Table
+**Device Interface IPv6 Address Link-local
+Address
+R1 G0/0 2001:db8:acad:00c8::1/64 fe80::1
+R1 G0/1 fe80::1
+R1 S0/0/0 fe80::1
+R2 G0/0 fe80::2
+R2 G0/1 fe80::2
+R2 S0/0/0 fe80::2
+PC1 NIC Auto Config
+PC2 NIC Auto Config
+PC3 NIC Auto Config
+PC4 NIC Auto Config
+##Objectives
+Step 1: Determine IPv6 subnets and addressing scheme.
+Step 2: Configure IPv6 addressing on routers and PCs.
+Step 3: Verify IPv6 connectivity.
+##Background / Scenario
+Network administrators must know how to implement IPv6 in their networks. You have been asked to set up a
+network for use by the sales staff for a customer demonstration. The network will use a series of consecutive
+IPv6 subnets for four LANs. Your job is to assign the subnets to the LANs and configure the routers and PCs
+with IPv6 addressing. Make certain to configure all the necessary components for IPv6 routing on the routers.
+##Instructions
+Step 1: Determine IPv6 subnets and addressing scheme.
+You have been given the IPv6 subnet 2001:db8:acad:00c8::/64 as the starting subnet. You will need four
+more subnets for each network that is required. Increment the subnet addresses consecutively by one to
+arrive at the four required subnets. Complete the table below.
+Subnet Table
+Subnet Address
+R1 G0/0/ LAN 2001:db8:acad:00c8::0/64
+R1 G0/1 LAN
+Packet Tracer - Implement a Subnetted IPv6 Addressing Scheme
+© 2013 - 2019 Cisco and/or its affiliates. All rights reserved. Cisco Public Page 2 of 2 www.netacad.com
+Subnet Address
+R2 G0/0 LAN
+R2 G0/1 LAN
+R1 to R2 link network
+Step 2: Configure IPv6 addressing on routers and PCs.
+Complete the addressing table above to use as a guide for configuring the devices.
+• Assign the first IP address in the subnet to the router LAN interfaces.
+• Assign the link-local addresses as designated in the addressing table.
+• For the connection between the routers, assign the first address in the subnet to R1.
+• For the connection between the routers, assign the second address in the subnet to R2.
+• Set all four hosts to automatically configure with IPv6 addresses.
+Step 3: Verify IPv6 connectivity.
+The PCs should be able to ping each other if addressing has been configured properly.
+End of document
